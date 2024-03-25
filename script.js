@@ -1,4 +1,7 @@
-let tableCollapse = true;
+$( document ).ready(function() {
+  console.log( "ready!" );
+
+  let tableCollapse = true;
 
 $('.print-button').click(function() {
     window.print()
@@ -8,6 +11,7 @@ $('.table-collapse-button').click(() => {
   tableCollapse = !tableCollapse;
   console.log('tableCollapse', tableCollapse);
 });
+
 const stackedCanvas = document.getElementById('stacked');
 stackedCanvas.height = 400;
 stackedCanvas.width = 600;
@@ -466,5 +470,6 @@ Webflow.push(function() {
     estimatedHomeValueChart.update();
 
     return false;
+    });
   });
 });
