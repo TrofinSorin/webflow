@@ -1,7 +1,6 @@
-$( document ).ready(function() {
-  console.log( "ready!" );
+console.log( "ready!" );
 
-  let tableCollapse = true;
+let tableCollapse = true;
 
 $('.print-button').click(function() {
     window.print()
@@ -472,4 +471,3 @@ Webflow.push(function() {
     return false;
     });
   });
-});
