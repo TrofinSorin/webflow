@@ -1,5 +1,12 @@
+let tableCollapse = true;
+
 $('.print-button').click(function() {
     window.print()
+});
+
+$('.table-collapse-button').click(() => {
+  tableCollapse = !tableCollapse;
+  console.log('tableCollapse', tableCollapse);
 });
 const stackedCanvas = document.getElementById('stacked');
 stackedCanvas.height = 400;
